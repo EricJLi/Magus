@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evolve"
+        android:id="@+id/txtEvolve"
+        android:textSize="40dp"
+        android:layout_marginEnd="42dp"
+        android:layout_below="@+id/txtBattle"
+        android:layout_toStartOf="@+id/txtQuest" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battle"
+        android:id="@+id/txtBattle"
+        android:textSize="60dp"
+        android:layout_marginLeft="131dp"
+        android:layout_above="@+id/txtUpgrade"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upgrade"
+        android:id="@+id/txtUpgrade"
+        android:textSize="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/txtBattle"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barracks"
+        android:id="@+id/txtQuest"
+        android:textSize="40dp"
+        android:layout_below="@+id/txtUpgrade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView14"
+        android:background="@drawable/battlebutton"
+        android:layout_alignTop="@+id/txtBattle"
+        android:layout_alignBottom="@+id/txtBattle"
+        android:layout_alignEnd="@+id/txtQuest"
+        android:layout_alignStart="@+id/txtBattle" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView15"
+        android:background="@drawable/evolvebutton"
+        android:layout_above="@+id/txtQuest"
+        android:layout_alignStart="@+id/txtEvolve"
+        android:layout_alignTop="@+id/txtEvolve"
+        android:layout_alignEnd="@+id/txtEvolve" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView16"
+        android:background="@drawable/upgradebutton"
+        android:layout_alignTop="@+id/txtUpgrade"
+        android:layout_alignStart="@+id/txtUpgrade"
+        android:layout_alignBottom="@+id/txtUpgrade"
+        android:layout_alignEnd="@+id/txtUpgrade" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView17"
+        android:background="@drawable/inventorybutton"
+        android:layout_alignTop="@+id/txtQuest"
+        android:layout_alignStart="@+id/txtQuest"
+        android:layout_alignBottom="@+id/txtQuest"
+        android:layout_alignEnd="@+id/txtBattle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made by: Eric Li and Max Saar"
+        android:id="@+id/textView10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
